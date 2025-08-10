@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/costiiordan/portfolio/issues"
   },
-  "homepage": "https://github.com/costiiordan/portfolio#readme",
+  "homepage": "https://costiiordan.github.io/portfolio",
   "devDependencies": {
     "vite": "^7.1.1"
   }
