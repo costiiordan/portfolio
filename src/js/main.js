@@ -51,20 +51,10 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(15, 15, 15, 0.98)';
+        header.classList.add('transparent-background');
     } else {
-        header.style.background = 'rgba(15, 15, 15, 0.95)';
+        header.classList.remove('transparent-background');
     }
 });
 
 createParticles();
-
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-10px) scale(1.02)';
-    });
-
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(-10px) scale(1)';
-    });
-});
