@@ -18,4 +18,45 @@ function createParticles() {
     }
 }
 
+function initNavigation() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('[data-role="section"]');
+
+    function updateActiveNavigation() {
+        const scrollPositionTop = window.scrollY;
+        const scrollPositionBottom = scrollPositionTop + window.innerHeight;
+        
+        let currentSection = null;
+        
+        sections.forEach(section => {
+            if (currentSection) {
+                return;
+            }
+
+            const sectionTop = section.offsetTop;
+            const sectionBottom = section.offsetHeight + sectionTop;
+
+            if (
+                (scrollPositionTop >= sectionTop && sectionBottom > scrollPositionTop ) ||
+                (scrollPositionTop <= sectionTop && scrollPositionBottom >= sectionBottom)
+            ) {
+                currentSection = section.dataset.sectionName;
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            
+            if (currentSection && link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNavigation);
+
+    updateActiveNavigation();
+}
+
 createParticles();
+initNavigation();
