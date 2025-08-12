@@ -4,39 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior Software Consultant/Engineer Portfolio</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 <div class="bg-particles" id="particles"></div>
 
-<header>
-    <nav>
-        <a href="#" class="logo">&lt;/&gt; Constantin Iordan</a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="main-container">
+    <div class="header-container">
+        <div class="sticky-header">
+            <header>
+                <h1>Constantin Iordan</h1>
+                <h2>Senior Software Consultant/Engineer</h2>
+                <p>I build with passion software tailored for your business.</p>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about" class="active">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Senior Software Consultant/Engineer</h1>
-        <p class="subtitle">18 years of passion in Software Development</p>
-        <p class="description">
-            Passionate full-stack engineer with extensive experience across multiple industries, delivering the best
-            software solutions customized to meet unique business needs.
-        </p>
-        <a href="#projects" class="cta-button">View My Work</a>
+            <section class="contact-info">
+                <a href="mailto:costi.iordan@gmail.com" target="_blank" class="contact-item">
+                    <span class="icon-mail"></span>
+                    <span>costi.iordan@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/constantiniordan/" target="_blank" class="contact-item">
+                    <span class="icon-linkedin"></span>
+                    <span>linkedin.com/in/constantiniordan/</span>
+                </a>
+            </section>
+        </div>
     </div>
-</section>
 
-<section id="about" class="animate-on-scroll">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-        <div class="about-text">
+    <div class="page-container">
+        <section class="about" id="about" data-role="section" data-section-name="about">
+            <h3 class="section-title">About</h3>
+
             <p>
                 I love what I do and I do great things when I do what I love.
             </p>
@@ -52,219 +64,165 @@
             <p>
                 Every project is an opportunity to create something remarkable that makes a real impact.
             </p>
-        </div>
-        <div class="stats">
-            <div class="stat">
-                <span class="stat-number">18+</span>
-                Years Experience
-            </div>
-            <div class="stat">
-                <span class="stat-number">15+</span>
-                Projects Delivered
-            </div>
-            <div class="stat">
-                <span class="stat-number">5</span>
-                Industries
-            </div>
-            <div class="stat">
-                <span class="stat-number">10+</span>
-                Technologies
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section id="skills" class="animate-on-scroll">
-    <h2 class="section-title">Technical Expertise</h2>
-    <div class="skills-grid">
-        <div class="skill-category">
-            <h3>Backend Development</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">PHP</span>
-                <span class="skill-tag">Laravel</span>
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">Elasticsearch</span>
-                <span class="skill-tag">Redis</span>
-            </div>
-        </div>
-        <div class="skill-category">
-            <h3>Frontend Development</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Vue.js</span>
-                <span class="skill-tag">Angular</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">Responsive web design</span>
-                <span class="skill-tag">Accessibility</span>
-            </div>
-        </div>
-        <div class="skill-category">
-            <h3>E-commerce Platforms</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Spryker Certified Solution Architect</span>
-                <span class="skill-tag">Custom Solutions</span>
-                <span class="skill-tag">Payment Integration</span>
-                <span class="skill-tag">Inventory Management</span>
-            </div>
-        </div>
-        <div class="skill-category">
-            <h3>Industries</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">E-commerce</span>
-                <span class="skill-tag">Telecommunications</span>
-                <span class="skill-tag">Transportation</span>
-                <span class="skill-tag">Logistics</span>
-                <span class="skill-tag">Events</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects" class="animate-on-scroll">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3 class="project-title">Spryker E-commerce Solutions</h3>
-            <p class="project-description">
-                Multiple international e-commerce implementations for automotive, sports events, and wholesale food
-                industries. Delivered as contractor being part of international teams. Spryker module configuration,
-                custom module development, and integration with third-party services. Focused on performance
-                optimization, scalability, and maintainability.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Spryker</span>
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">Symfony</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Twig</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3 class="project-title">Custom E-commerce Platform</h3>
-            <p class="project-description">
-                PlayBike.ro is a custom e-commerce platform designed to meet the specific needs of the business. It
-                includes advanced search capabilities, inventory management, and real-time performance optimization
-                using modern caching strategies. The platform is built using a modular monolith architecture, allowing
-                for easy scalability and maintainability.
-            </p>
-
-            <div class="project-tech">
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Elasticsearch</span>
-                <span class="tech-tag">Redis</span>
-                <span class="tech-tag">Vue.js</span>
-                <span class="tech-tag">Bootstrap</span>
-                <span class="tech-tag">Responsive web design</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3 class="project-title">Bike Rental Platform</h3>
-            <p class="project-description">
-                Modern rental management system with booking functionality, inventory tracking, and custom pricing and
-                discounts. Built with Laravel Filament for admin panel efficiency and a custom frontend with vanilla
-                css and vanilla JavaScript for a seamless user experience and simplicity.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">Filament</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">Responsive web design</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3 class="project-title">Internal Support Tool Frontend</h3>
-            <p class="project-description">
-                React-based frontend for internal support operations, featuring real-time updates, advanced filtering,
-                and intuitive user experience for support team efficiency. Migrated from a legacy system to a modern
-                stack for improved performance and maintainability.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">REST API</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3 class="project-title">Mountain Bike Community Platform</h3>
-            <p class="project-description">
-                DirtBike.ro is a custom-built community platform for mountain biking enthusiasts. It features user
-                profiles, social interactions, image galleries, forums, a news system, a marketplace, and an events
-                calendar. The platform is built entirely from scratch with custom development, ensuring a unique and
-                tailored experience for its users.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">CakePHP</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">SCSS</span>
-                <span class="tech-tag">Responsive web design</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3 class="project-title">B2B Supplier Portal Frontend</h3>
-            <p class="project-description">
-                Angular-powered B2B portal for supplier management with complex workflows, document handling, and
-                multi-role access control for enterprise operations.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Angular</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Angular Material UI</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="animate-on-scroll">
-    <h2 class="section-title">Let's Work Together</h2>
-    <div class="contact-content">
-        <p>
-            Ready to bring your next project to life? I'm always excited to discuss new ideas, opportunities and
-            challenges. Let's create something amazing together.
-        </p>
-        <div class="contact-info">
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
-                    </svg>
+        <section id="skills" class="skills" data-role="section" data-section-name="skills">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Backend Development</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
                 </div>
-                <h4>Email</h4>
-                <p>
-                    <a href="mailto:costi.iordan@gmail.com" target="_blank">costi.iordan@gmail.com</a>
-                </p>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
-                    </svg>
+                <div class="skill-category">
+                    <h4>Frontend Development</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">Responsive web design</span>
+                        <span class="skill-tag">Accessibility</span>
+                    </div>
                 </div>
-                <h4>LinkedIn</h4>
-                <p>
-                    <a href="https://www.linkedin.com/in/constantiniordan/" target="_blank">
-                        @constantiniordan
-                    </a>
-                </p>
+                <div class="skill-category">
+                    <h4>E-commerce Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spryker Certified Solution Architect</span>
+                        <span class="skill-tag">Custom Solutions</span>
+                        <span class="skill-tag">Payment Integration</span>
+                        <span class="skill-tag">Inventory Management</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Industries</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">E-commerce</span>
+                        <span class="skill-tag">Telecommunications</span>
+                        <span class="skill-tag">Transportation</span>
+                        <span class="skill-tag">Logistics</span>
+                        <span class="skill-tag">Events</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<footer>
-    <p>&copy; 2025 Constantin Iordan. Crafted with passion.</p>
-</footer>
+        <section id="projects" class="projects" data-role="section" data-section-name="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Spryker E-commerce Solutions</h3>
+                    <p class="project-description">
+                        Multiple international e-commerce implementations for automotive, sports events, and wholesale food
+                        industries. Delivered as contractor being part of international teams. Spryker module configuration,
+                        custom module development, and integration with third-party services. Focused on performance
+                        optimization, scalability, and maintainability.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Spryker</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Symfony</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Twig</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">Custom E-commerce Platform</h4>
+                    <p class="project-description">
+                        PlayBike.ro is a custom e-commerce platform designed to meet the specific needs of the business. It
+                        includes advanced search capabilities, inventory management, and real-time performance optimization
+                        using modern caching strategies. The platform is built using a modular monolith architecture, allowing
+                        for easy scalability and maintainability.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Elasticsearch</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Responsive web design</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">Bike Rental Platform</h4>
+                    <p class="project-description">
+                        Modern rental management system with booking functionality, inventory tracking, and custom pricing and
+                        discounts. Built with Laravel Filament for admin panel efficiency and a custom frontend with vanilla
+                        css and vanilla JavaScript for a seamless user experience and simplicity.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Filament</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Responsive web design</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">Internal Support Tool Frontend</h4>
+                    <p class="project-description">
+                        React-based frontend for internal support operations, featuring real-time updates, advanced filtering,
+                        and intuitive user experience for support team efficiency. Migrated from a legacy system to a modern
+                        stack for improved performance and maintainability.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">Mountain Bike Community Platform</h4>
+                    <p class="project-description">
+                        DirtBike.ro is a custom-built community platform for mountain biking enthusiasts. It features user
+                        profiles, social interactions, image galleries, forums, a news system, a marketplace, and an events
+                        calendar. The platform is built entirely from scratch with custom development, ensuring a unique and
+                        tailored experience for its users.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">CakePHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SCSS</span>
+                        <span class="tech-tag">Responsive web design</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">B2B Supplier Portal Frontend</h4>
+                    <p class="project-description">
+                        Angular-powered B2B portal for supplier management with complex workflows, document handling, and
+                        multi-role access control for enterprise operations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Angular Material UI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Constantin Iordan. Crafted with passion.</p>
+        </footer>
+    </div>
+</div>
 
 <script type="module" src="./js/main.js"></script>
 </body>
