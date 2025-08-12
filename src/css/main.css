@@ -241,8 +241,10 @@ nav {
     color: var(--text-color-1);
     transition: color 0.3s ease;
 
-    &:hover {
-        color: #fff;
+    @media (min-width: 1200px) {
+        &:hover {
+            color: #fff;
+        }
     }
 
     [class^="icon-"] {
@@ -294,10 +296,12 @@ nav {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
-}
 
-.skill-category:hover {
-    background: rgba(255, 255, 255, 0.08);
+    @media (min-width: 1200px) {
+        &:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+    }
 }
 
 .skill-category h4 {
@@ -321,10 +325,12 @@ nav {
     font-size: 0.9rem;
     color: #cbd5e1;
     transition: all 0.3s ease;
-}
 
-.skill-tag:hover {
-    background: rgba(59, 130, 246, 0.3);
+    @media (min-width: 1200px) {
+        &:hover {
+            background: rgba(59, 130, 246, 0.3);
+        }
+    }
 }
 
 .projects {
@@ -335,12 +341,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-
-    &:hover {
-        .project-card {
-            opacity: 0.6;
-        }
-    }
 }
 
 .project-card {
@@ -351,9 +351,23 @@ nav {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+}
 
-    &:hover {
-        opacity: 1!important;
+@media (min-width: 1200px) {
+    .projects-grid {
+        &:hover {
+            .project-card {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .project-card {
+        &:hover {
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            opacity: 1!important;
+        }
     }
 }
 
@@ -365,11 +379,6 @@ nav {
     right: 0;
     height: 3px;
     background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
-}
-
-.project-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .project-title {
