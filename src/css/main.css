@@ -323,7 +323,7 @@ nav {
     background: rgba(59, 130, 246, 0.2);
     border: 1px solid rgba(59, 130, 246, 0.3);
     border-radius: 18px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #cbd5e1;
     transition: all 0.3s ease;
 
@@ -332,6 +332,39 @@ nav {
             background: rgba(59, 130, 246, 0.3);
         }
     }
+}
+
+.experience {
+    padding: 1.5rem 0;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience-item {
+    p {
+        margin: 0 0 0.5rem;
+        color: var(--text-color-1);
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    color: var(--text-color-1);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.experience-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
 }
 
 .projects {
