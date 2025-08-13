@@ -44,8 +44,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before { content: '\f0e0'; } /* '' */
-.icon-linkedin:before { content: '\f30c'; } /* '' */
+.icon-mail:before { content: '\f0e0'; }
+.icon-doc-text:before { content: '\f0f6'; }
+.icon-linkedin:before { content: '\f30c'; }
 
 * {
     margin: 0;
@@ -418,18 +419,12 @@ footer {
     margin-top: 1.5rem;
 
     a {
-        display: inline-block;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 0.75rem 1rem;
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
         transition: all 0.3s ease;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
 
         &:hover {
-            background: rgba(255, 255, 255, 0.08);
             color: #fff;
         }
     }

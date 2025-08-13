@@ -1,3 +1,5 @@
+import resumePdf from '../files/Resume-Constantin-Iordan.pdf?url'
+
 function createParticles() {
     const container = document.getElementById('particles');
     const particleCount = 50;
@@ -58,5 +60,14 @@ function initNavigation() {
     updateActiveNavigation();
 }
 
+function initResumeButton() {
+    const resumeLink = document.querySelector('[data-action="view-resume"]');
+
+    if (resumeLink) {
+        resumeLink.href = resumePdf;
+    }
+}
+
 createParticles();
 initNavigation();
+initResumeButton();
