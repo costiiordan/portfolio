@@ -190,7 +190,7 @@ nav {
 
 .nav-links {
     list-style: none;
-    font-size: 1rem;
+    font-size: .9rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
